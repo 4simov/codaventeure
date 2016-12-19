@@ -1,4 +1,11 @@
 //deplacement0.3.c
+/*Programme débuté le 9 décembre, il va gérer les deplacements du joueur dans l'univers du rpg.
+
+-Aides-
+	. Pour répondre aux questions il faut écrire entièrement la réponse ( plus tard il y aura le choix entre répondre le chiffre ou réecrire la réponse entièrement ).
+
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -7,10 +14,14 @@
 #define MAXY 10
 #define MAXZ 100
 
+/* Valeurs globales */
 
 char pos[ MAXX ][ MAXY ][ MAXZ ];//definition de la longueur du tableau x et y et en z sera stocké la phrase de description du lieu.
 
 int x = 1, y = 1;
+
+
+/* Fonctions pour le deplacement */
 
 void verification( int *a, int *b, int *c, int *d ) //Ici nous vérifions les directions possibles selon la position x,y du joueur.
 {
@@ -53,12 +64,12 @@ void MenuDeplacement( int a, int b, int c, int d )//Ici nous allons gérer l'aff
 
 
 
-int saisie( int a, int b, int c, int d )
+int saisieMap( int a, int b, int c, int d )
 {
 	int n = 1;
 	char dir[ 4 ][ 6 ] = { "Nord", "Sud", "Est", "Ouest" }, tabsaisie[ 20 ];
 
-	printf( "Dans quelle direction allez-vous ?\n" );
+	printf( "Dans quelle direction allez-vous ?\n=> " );
 	scanf( "%s", &tabsaisie );	
 
 	if( strcmp( dir[ 0 ], tabsaisie) == 0 && a == 1 )//Nord
@@ -67,24 +78,29 @@ int saisie( int a, int b, int c, int d )
 //		n = 0;
 	}
 
-	if( strcmp( dir[ 1 ], tabsaisie ) == 0 && b == 1 )//Sud
+	else if( strcmp( dir[ 1 ], tabsaisie ) == 0 && b == 1 )//Sud
 	{
 		y--;
 //		n = 0;
 	}
 
-	if( strcmp( dir[ 2 ], tabsaisie ) == 0 && c == 1 )//Est
+	else if( strcmp( dir[ 2 ], tabsaisie ) == 0 && c == 1 )//Est
 	{
 		x++;
 //		n = 0;
 	}
 
-	if( strcmp( dir[ 3 ], tabsaisie ) == 0 && d == 1 )//Ouest
+	else if( strcmp( dir[ 3 ], tabsaisie ) == 0 && d == 1 )//Ouest
 	{
 		x--;
 //		n = 0;
 	}
 	
+	else 
+		printf( "saisie invalide\n" );
+
+	printf( "\n" );
+
 	return n;
 }
 
@@ -96,16 +112,18 @@ int deplacement( )
 
 	while( continuer )
 	{
-		printf( "position(%d,%d)\n", x, y );
+		printf( "Où allez-vous ? ( position(%d,%d) )\n", x, y );
 
-		verification( &Nord, &Sud, &Est, &Ouest );
+		verification( &Nord, &Sud, &Est, &Ouest );//Vérifie les directions possibles
 
-		MenuDeplacement( Nord, Sud, Est, Ouest );
+		MenuDeplacement( Nord, Sud, Est, Ouest );//Affiche les différentes direction que l'utilisateur peut prendre
 
-		continuer = saisie( Nord, Sud, Est, Ouest );
+		continuer = saisieMap( Nord, Sud, Est, Ouest );//Lorsque la saisie du joueur est valide saisie() retourne 0, ainsi la boucle s'arrete
 	}
 
 }
+
+/* Fin des fonctions de déplacement */
 
 int main()
 {
