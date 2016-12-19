@@ -22,10 +22,14 @@ Travail effectué
 
 Travail en cours 
 
-	- Fonction de déplacement ( en pause ).
-	- Fonction pour la création du personnage ( en cours ).
+	- Fonctions de déplacement ( en pause ).
+	- Fonctions pour la création du personnage ( en cours ).
+	- Fonctions de combat ( brièvement abordé ).
 	
 Idées de fonctionnalités
 
 	- Monter de niveau.
 	- Amélioration des équipements chez un forgeron.
+	- Fonctionnalité de combat : implémentation de l'échec critique, lors du tirage pour savoir si le joueur touche l'ennemi 	 si cette valeur est trop faible le joueur subit des dégats ou est " paralysé " pendant un tour.
+
+
