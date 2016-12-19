@@ -25,4 +25,4 @@ Travail en cours
 Idées de fonctionnalités
 
 	- Monter de niveau.
-	- Amélioration des équipement chez un forgeron.
+	- Amélioration des équipements chez un forgeron.
