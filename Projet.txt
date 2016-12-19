@@ -2,12 +2,15 @@
 
 Description du projet
 
-	Il s’agit de créer un jeu de rôle qui emporte le joueur dans un univers d’heroïc fantasy. Le joueur démarre sa quête par la création de son personnage auquel il définira son prénom, nom, âge, classe et race parmi une sélection possible, aura la possibilité d’écrire une description physique, psychologique et l’histoire de son personnage.
+	Il s’agit de créer un jeu de rôle qui emporte le joueur dans un univers d’heroïc fantasy. Le joueur démarre 
+sa quête par la création de son personnage auquel il définira son prénom, nom, âge, classe et race parmi une sélection 
+possible, aura la possibilité d’écrire une description physique, psychologique et l’histoire de son personnage.
 
 
 Objectifs
 
-	- Créer des outils de bases permettant une évolutivité facile du programme pour l’ajout de fonctionnalités et de quêtes.
+	- Créer des outils de bases permettant une évolutivité facile du programme pour l’ajout de fonctionnalités 
+	et de quêtes.
 	- Créer une carte sur laquelle le joueur pourra se déplacer.
 	- Créer un système de dialogue.
 	- Créer un système de combat.
