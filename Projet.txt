@@ -21,3 +21,8 @@ Travail en cours
 
 	- Fonction de déplacement ( en pause ).
 	- Fonction pour la création du personnage ( en cours ).
+	
+Idées de fonctionnalités
+
+	- Monter de niveau.
+	- Amélioration des équipement chez un forgeron.
