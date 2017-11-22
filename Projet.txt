@@ -3,8 +3,8 @@
 Description du projet
 
 	Il s’agit de créer un jeu de rôle qui emporte le joueur dans un univers d’heroïc fantasy. Le joueur démarre 
-sa quête par la création de son personnage auquel il définira son prénom, nom, âge, classe et race parmi une sélection 
-possible, aura la possibilité d’écrire une description physique, psychologique et l’histoire de son personnage.
+sa quête par la création de son personnage durant laquelle il définira son prénom, nom, âge, classe et race parmi une sélection 
+possible, il y aura aussi la possibilité d’écrire une description physique, psychologique et l’histoire de son personnage.
 
 
 Objectifs
@@ -19,10 +19,11 @@ Objectifs
 Travail effectué
 
 	- Bases des fonctions responsable des déplacements.
+	- Base pour les déplacement sur une carte de forme carré.
 
 Travail en cours 
 
-	- Fonctions de déplacement ( en pause ).
+	- Fonctions de déplacement ( en cours ).
 	- Fonctions pour la création du personnage ( en cours ).
 	- Fonctions de combat ( brièvement abordé ).
 	
